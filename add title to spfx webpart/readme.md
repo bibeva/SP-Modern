@@ -14,7 +14,10 @@ updateProperty: (value:string) => {
 }
 ```
 
-Also change it to <IPersonInfoProps>
+Also change it to 
+```
+<IPersonInfoProps>
+```
 
 
 ## In IPersonInfoProps.ts under components folder, add this
