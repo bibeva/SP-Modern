@@ -1,9 +1,9 @@
-1. Install SPFX React controls
+## Install SPFX React controls
 
 npm install @pnp/spfx-controls-react --save --save-exact
 
 
-2. In PersonInfoWebparts.ts under BaseClientSideWebPart, add this
+## In PersonInfoWebparts.ts under BaseClientSideWebPart, add this
 
 title:this.properties.title,
 displayMode:this.displayMode,
@@ -14,7 +14,7 @@ updateProperty: (value:string) => {
 Also change it to <IPersonInfoProps>
 
 
-3. In IPersonInfoProps.ts under components folder, add this
+## In IPersonInfoProps.ts under components folder, add this
 
 import { DisplayMode } from '@microsoft/sp-core-library';
 
@@ -23,7 +23,7 @@ displayMode:DisplayMode;
 updateProperty: (value:string) =>void;
 
 
-4. Under PersonInfo.tsx, import this:
+## Under PersonInfo.tsx, import this:
 import {WebPartTitle} from "@pnp/spfx-controls-react/lib/WebPartTitle";
 
 also, add this at the beginning:
